@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::placeholder, textarea::placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: white;
+    color: black;
+
+}
+a{
+    text-align: left;
+}
+a:link, a:visited{
+    color: black;
+    text-decoration: none;
+}
+h1 {
+    position: relative;
+    margin: 100px 0 25px 0;
+    font-size: 2.3em;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+    text-align: center;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    
+    background: transparent;
+    outline: none;
+    color: black;
+    
+    border: solid 1px black;
+    border-bottom: none;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+    background: #b3aca7;
+    color: white;
+}
+
+textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    
+    background: transparent;
+    outline: none;
+    
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    
+    border: solid 1px black;
+    border-bottom: none;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+    background: #b3aca7;
+    color: black;
+}
+
+#edit {
+    width: 502px;
+    
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    color: black;
+    
+    outline:none;
+    cursor: pointer;
+    
+    border: solid 1px black;
+
+    background-color: #aca49c;
+    font-weight: bold;
+
+}
+
+#edit:hover {
+    color: white;
+}

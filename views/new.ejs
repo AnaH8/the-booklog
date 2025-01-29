@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new book</title>
+    <link rel="stylesheet" href="/styles/new.css">
+</head>
+<body>
+    <a href="/">CANCEL</a>
+    <h1>add new book</h1>
+    
+    <%# will contain (title, isbn, date_read, rating, summary, notes) to fill %>
+    <form action="/add" method="post">
+        <!-- <label for="title">Title:</label> -->
+        <input type="text" id="title" name="title" autocomplete="off" placeholder="TITLE"><br><br>
+        <!-- <label for="isbn">ISBN:</label> -->
+        <input type="text" id="isbn" name="isbn" autocomplete="off" placeholder="ISBN"><br><br>
+        <!-- <label for="date_read">Date read:</label> -->
+        <input type="text" id="date_read" name="date_read" placeholder="DD.MM.YYYY" autocomplete="off"><br><br>
+        <!-- <label for="rating">Rating:</label> -->
+        <input type="number" min="1" max="5" id="rating" name="rating" placeholder="RATING"><br><br>
+        <!-- <label for="summary">Summary:</label> -->
+        <textarea id="summary" name="summary"  autocomplete="off" placeholder="SUMMARY"></textarea><br><br>
+        <!-- <label for="note">Notes:</label>
+        <input type="text" name="newNote" placeholder="new note" autocomplete="off">
+        <button type="submit" name="addNewNote" value="newNote">add new note</button><br> -->
+
+         <%# submit button "ADD" at the end, which takes me to /add, which will save data in database and redirect to path '/' %>
+        <input id="add" type="submit" name="add" value="add book">
+    </form>
+</body>
+</html>

@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+body{
+    /* background-color:antiquewhite; */
+    margin: 0 auto;
+    max-width: 70em;
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+}
+.all-books{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+.subtle {
+    color: #aca49c;
+}
+
+/* .card-container {
+    /* margin: 25px auto 0; 
+    background-color: red;
+} */
+.card {
+    background-color: #fff;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(75, 75, 75, .07);
+    z-index: 1;
+    
+}
+.card-body {
+    display: inline-block;
+    float: right;
+    width: 75%;
+    /* width: 310px; */
+}
+.card-date-rating {
+    display: block;
+    font-size: 12px;
+    letter-spacing: .5px;
+    margin: 15px 0 0;
+    text-transform: uppercase;
+}
+.card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 60px;
+    margin: 10px 0;
+}
+.card-description {
+    display: inline-block;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 10px 0;
+}
+.card-media{
+    width: 180px;
+    height: 275px;
+}
+.card-shadow {
+    background-color: #fff;
+    box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 0.2);
+    height: 1px;
+    margin: -1px auto 0;
+    width: 90%;
+    z-index: -1;
+}
+.card-form{
+    width: fit-content;
+}
+
+
+a:link, a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(60, 4, 60);
+}
+
+.starter{
+
+    padding: 5px;
+    margin-bottom: 10px;
+}
+/*
+input{
+    background-color: #2d2c2c43; 
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+ */

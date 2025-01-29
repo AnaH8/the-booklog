@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit existing book</title>
+    <link rel="stylesheet" href="/styles/edit.css">
+</head>
+<body>
+    <a href="/">CANCEL</a>
+    <h1>Edit book</h1>
+    <%# will contain existing (title, isbn, date_read, rating, summary, notes) based on which book you want to edit %>
+    <%# form that renders when clicking Edit on homepage, under a specific book %>
+    <form action="/edit/<%=existingBook.id%>" method="post">
+        <!-- <label for="title">Title:</label> -->
+        <input type="text" id="title" name="title" value="<%=existingBook.title%>"><br><br>
+        <!-- <label for="isbn">ISBN:</label> -->
+        <input type="text" id="isbn" name="isbn" value="<%=existingBook.isbn%>"><br><br>
+        <!-- <label for="date_read">Date read:</label> -->
+        <input type="text" id="date_read" name="date_read" value="<%=existingBook.date_read.toLocaleDateString("ro-RO")%>"><br><br>
+        <!-- <label for="rating">Rating:</label> -->
+        <input type="number" min="1" max="5" id="rating" name="rating" value="<%=existingBook.rating%>"><br><br>
+        <!-- <label for="summary">Summary:</label> -->
+        <textarea id="summary" name="summary" rows="8" cols="50"><%=existingBook.summary%></textarea><br><br>
+        <!-- edit button at the end, which takes me to /update/:id, which updates database and redirects to home page -->
+        <input id="edit" type="submit" formaction="/update/<%=existingBook.id%>" value="edit">
+    </form>
+    <a href="/">Cancel</a>
+</body>
+</html>

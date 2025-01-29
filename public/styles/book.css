@@ -1,0 +1,59 @@
+.subtle {
+    color: #aca49c;
+}
+
+.card-container {
+    /* margin: 25px auto 0; */
+    /* position: relative;   */
+    background-color: red;
+    width: 75%;
+    margin: 30px auto 30px;
+}
+.card {
+    background-color: #fff;
+    padding: 30px;
+    position: relative;
+    /* box-shadow: 0 0 5px rgba(75, 75, 75, .07); */
+    z-index: 1;
+    
+}
+.card-body {
+    display: inline-block;
+    float: right;
+    width: 75%;
+    /* width: 310px; */
+}
+.card-details {
+    display: block;
+    font-size: 12px;
+    letter-spacing: .5px;
+    margin: 15px 0 0;
+    text-transform: uppercase;
+}
+.card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 60px;
+    margin: 10px 0;
+}
+.card-description {
+    display: inline-block;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 10px 0;
+}
+.card-media{
+    width: 180px;
+    height: 275px;
+}
+.card-form{
+    width: fit-content;
+}
+a:link, a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(60, 4, 60);
+}

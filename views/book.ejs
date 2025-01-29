@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/styles/book.css">
+</head>
+<body>
+    <!-- link to go back to homepage -->
+    <a href="/">Go back to all the books</a>
+    <!-- containers that has all the info about the specific book -->
+    <div class="card-container">
+        <div class="card">
+          <div class="card-body">
+            <a href="/book/<%=books.title%>" class="card-title"><%=books.title%></a>
+            <span class="card-details subtle">Date read: <%=books.date_read.toLocaleDateString("ro-RO")%></span>
+            <span class="card-details subtle">Rating <%=books.rating %>/5</span>
+            <span class="card-details subtle">ISBN:  <%=books.isbn %></span>
+            <span class="card-description"><%=books.summary %></span>
+          </div>
+          <img src="https://covers.openlibrary.org/b/isbn/<%=books.isbn%>-M.jpg?default=false" alt="book cover" class="card-media" />
+        </div>
+    </div>
+
+    <!-- display all notes that have book_id = book.id -->
+    <div class="notes-container">
+        <!-- for each of note, <p></p> -->
+    </div>
+</body>
+</html>
