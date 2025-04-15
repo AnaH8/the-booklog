@@ -29,11 +29,11 @@ env.config();
 const API_URL = "https://openlibrary.org/search.json?q=";
 
 const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
+  user: process.env.DATABASE_USER,
+  host: process.env.DATABASE_HOST,
   database: process.env.DATABASE_NAME,
   password: process.env.DATABASE_PASSWORD,
-  port: 5432,
+  port: process.env.DATABASE_PORT,
 });
 
 db.connect(); 
