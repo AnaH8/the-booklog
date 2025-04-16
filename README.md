@@ -17,8 +17,9 @@ Web app where you can keep track of read books
 - sort books by title, newest or best
 
 ## How it looks
-They all have a Cancel and Go Back button in the top left corner of the page (not shown in photos below)
+
 ![Home page](/public/assets/booklog_home.JPG)
+They all have a Cancel and Go Back button in the top left corner of the page (not shown in photos below)
 ![Add book](/public/assets/booklog_add.JPG)
 ![Edit book](/public/assets/booklog_edit.JPG)
 
